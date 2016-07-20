@@ -270,7 +270,7 @@ const styles = StyleSheet.create({
   cell: {
     justifyContent: 'center',
     paddingLeft: 15,
-    paddingRight: 20,
+    paddingRight: 15,
     paddingTop: 10,
     paddingBottom: 10,
     flexDirection: 'row',
@@ -315,13 +315,13 @@ const styles = StyleSheet.create({
     color: 'gray',
   },
   accessory_disclosureIndicator: {
-    width: 10,
-    height: 10,
+    width: 9,
+    height: 9,
     marginLeft: 7,
     backgroundColor: 'transparent',
-    borderTopWidth: 1,
-    borderRightWidth: 1,
-    borderColor: '#c7c7cc',
+    borderTopWidth: 2,
+    borderRightWidth:2,
+    borderColor: '#c8c8c8',
     transform: [{
       rotate: '45deg',
     }],

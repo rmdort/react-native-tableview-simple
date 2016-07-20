@@ -60,9 +60,7 @@ const Section = (props) => {
       const renderSeparator = () => {
         if (hideSeparator) { return; }
         return (
-          <View style={styleSeparator}>
-            <View style={styleSeparatorInner} />
-          </View>
+          <View style={styles.rowSeparator} />
           );
       };
 
@@ -157,6 +155,11 @@ const styles = StyleSheet.create({
   separator_inner: {
     height: StyleSheet.hairlineWidth,
   },
+  rowSeparator: {
+    borderBottomWidth: 0.5,
+    borderBottomColor: 'rgb(200, 199, 204)',
+    marginLeft: 15,
+  }
 });
 
 
