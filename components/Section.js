@@ -65,7 +65,7 @@ const Section = (props) => {
       };
 
       return (
-        <View>
+        <View style={{backgroundColor: 'white'}}>
           {child}
           {renderSeparator()}
         </View>
@@ -153,12 +153,12 @@ const styles = StyleSheet.create({
   separator: {
   },
   separator_inner: {
-    height: StyleSheet.hairlineWidth,
+    // height: StyleSheet.hairlineWidth,
   },
   rowSeparator: {
-    borderBottomWidth: 0.5,
+    borderBottomWidth: StyleSheet.hairlineWidth,
     borderBottomColor: 'rgb(200, 199, 204)',
-    marginLeft: 15,
+    marginLeft: 15
   }
 });
 

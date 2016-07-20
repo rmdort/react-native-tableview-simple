@@ -54,7 +54,6 @@ const CustomCell = (props) => {
 const styles = StyleSheet.create({
   cell: {
     backgroundColor: '#fff',
-    height: 44,
     justifyContent: 'center',
     paddingLeft: 15,
     paddingRight: 20,
