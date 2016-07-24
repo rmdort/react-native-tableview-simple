@@ -116,7 +116,7 @@ const Section = (props) => {
   return (
     <View style={styleSection}>
       {props.headerComponent || renderHeader()}
-      <View style={styles.section_inner}>
+      <View style={[styles.section_inner, props.style]}>
         {React.Children.map(children, renderChild)}
       </View>
       {props.footerComponent || renderFooter()}
@@ -183,7 +183,7 @@ Section.defaultProps = {
   allowFontScaling: true,
   headerTextColor: '#6d6d72',
   hideSeparator: false,
-  sectionTintColor: '#EFEFF4',
+  sectionTintColor: 'transparent',
   footerTextColor: '#6d6d72',
   separatorInsetLeft: 15,
   separatorInsetRight: 0,
